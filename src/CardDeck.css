@@ -1,5 +1,36 @@
+.CardDeck {
+    font-family: "Slabo 27px";
+}
 .CardDeck-pile {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.CardDeck-title {
+    color: azure;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.CardDeck-subtitle {
+    font-size: 20px;
+}
+
+.CardDeck-btn {
+    background: none;
+    border: 2px solid;
+    outline: none;
+    font: inherit;
+    margin: 0.5em;
+    padding: 1em 2em;
+    color: #009688;
+    transition: 0.25s;
+}
+.CardDeck-btn:hover {
+    cursor: pointer;
+    border-color: #009688;
+    color: white;
+    box-shadow: inset 0 0 0 2em #009688;
 }

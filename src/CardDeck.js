@@ -44,8 +44,13 @@ class CardDeck extends Component {
     render() {
         return (
             <div className="CardDeck">
-                <h1>Card Dealer</h1>
-                <button onClick={this.handleClick}>Deal a card</button>
+                <h1 className="CardDeck-title">🔷 Card Dealer 🔷</h1>
+                <h2 className="CardDeck-title CardDeck-subtitle">
+                    🔷 A little demo made with React 🔷
+                </h2>
+                <button className="CardDeck-btn" onClick={this.handleClick}>
+                    Deal a card
+                </button>
                 <div className="CardDeck-pile">
                     {this.state.cards.map(card => (
                         <Card info={card} key={card.code} />
