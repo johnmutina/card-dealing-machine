@@ -2,11 +2,8 @@ import React, { Component } from "react";
 
 class Card extends Component {
     render() {
-        return (
-            <div>
-                <h1>Card</h1>
-            </div>
-        );
+        let { info } = this.props;
+        return <img src={info.image} alt={`${info.value} OF ${info.suit}`} />;
     }
 }
 
